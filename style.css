@@ -389,59 +389,134 @@ section {
    COURSE
 ========================= */
 
+/* =========================
+   COURSES
+========================= */
+
+.courses {
+  background: #f6f6f4;
+}
+
+
+.section-lead {
+  margin-top: 20px;
+
+  color: #666;
+
+  font-size: 15px;
+}
+
+
 .course-grid {
+
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
+
   gap: 30px;
 }
 
+
 .course-card {
-  min-height: 400px;
 
-  padding: 45px;
+  position: relative;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  height: 500px;
 
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
 
   color: #fff;
 
-  position: relative;
-  overflow: hidden;
+  display: flex;
+
+  align-items: flex-end;
+
 }
 
-.course-card::before {
-  content: "";
+
+.course-card img {
 
   position: absolute;
+
   inset: 0;
 
-  background: linear-gradient(
-    transparent,
-    rgba(0, 0, 0, 0.7)
-  );
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.7s ease;
+
 }
+
+
+.course-card:hover img {
+
+  transform: scale(1.05);
+
+}
+
+
+.course-card-overlay {
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,0.75),
+      rgba(0,0,0,0.05)
+    );
+
+}
+
 
 .course-card-content {
+
   position: relative;
+
   z-index: 2;
+
+  padding: 40px;
+
 }
 
-.course-card h3 {
-  margin: 0 0 10px;
 
-  font-size: 32px;
+.course-card-content span {
+
+  font-size: 12px;
+
+  letter-spacing: 0.2em;
+
+  opacity: 0.8;
 }
 
-.course-card p {
+
+.course-card-content h3 {
+
+  margin: 8px 0;
+
+  font-size: 34px;
+}
+
+
+.course-card-content p {
+
   margin: 0 0 20px;
+
+  font-size: 15px;
 }
 
-.course-card .button {
-  background: #fff;
+
+.course-card-content strong {
+
+  font-size: 14px;
+
+  border-bottom: 1px solid #fff;
+
+  padding-bottom: 5px;
 }
 
 
