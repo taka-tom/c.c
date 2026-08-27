@@ -108,49 +108,149 @@ nav a:hover {
    HERO
 ========================= */
 
+/* =========================
+   HERO CAROUSEL
+========================= */
+
 .hero {
-  min-height: 650px;
-
-  display: flex;
-  align-items: center;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.15)
-    ),
-    url("images/hero.jpg")
-    center / cover no-repeat;
+  position: relative;
+  height: 650px;
+  overflow: hidden;
 
   color: #fff;
 }
 
-.hero-content {
-  width: min(1100px, 90%);
-  margin: 0 auto;
+
+.hero-slides {
+  position: absolute;
+  inset: 0;
 }
+
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0;
+
+  transition: opacity 1s ease;
+}
+
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+
+.hero-slide img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* 黒いフィルター */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  z-index: 1;
+}
+
+
+/* テキスト */
+
+.hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1100px, 90%);
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
 
 .hero small {
   display: block;
+
   margin-bottom: 15px;
 
   font-size: 14px;
+
   letter-spacing: 0.15em;
 }
+
 
 .hero h1 {
   margin: 0;
 
   font-size: clamp(42px, 7vw, 78px);
+
   line-height: 1.15;
+
   letter-spacing: 0.04em;
 }
+
 
 .hero p {
   margin: 25px 0 35px;
 
   font-size: 18px;
+}
+
+
+/* ドット */
+
+.hero-dots {
+  position: absolute;
+
+  z-index: 3;
+
+  bottom: 30px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+
+  gap: 10px;
+}
+
+
+.hero-dot {
+  width: 9px;
+  height: 9px;
+
+  padding: 0;
+
+  border: 0;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.5);
+
+  cursor: pointer;
+}
+
+
+.hero-dot.active {
+  background: #fff;
 }
 
 
