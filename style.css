@@ -668,4 +668,20 @@ footer p {
     flex-direction: column;
   }
 
+.course-grid {
+  grid-template-columns: 1fr;
+}
+
+.course-card {
+  height: 420px;
+}
+
+.course-card-content {
+  padding: 30px;
+}
+
+.course-card-content h3 {
+  font-size: 30px;
+}
+
 }
