@@ -801,4 +801,20 @@ footer p {
   font-size: 30px;
 }
 
+.trial-buttons {
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+.trial-button {
+
+  width: 100%;
+
+  max-width: 320px;
+
+}
+
 }
