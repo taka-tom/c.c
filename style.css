@@ -936,4 +936,26 @@ footer p {
 
 }
 
+.access-inner {
+
+  grid-template-columns: 1fr;
+
+  gap: 40px;
+
+}
+
+
+.access-map {
+
+  min-height: 300px;
+
+}
+
+
+.access-map iframe {
+
+  min-height: 300px;
+
+}
+
 }
