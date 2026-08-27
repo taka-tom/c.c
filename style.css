@@ -1012,6 +1012,322 @@ footer p {
   transform: translateY(-3px);
 }
 
+/* =========================
+   TRIAL PAGE
+========================= */
+
+.trial-hero {
+  background: #222;
+}
+
+
+/* =========================
+   TRIAL INTRO
+========================= */
+
+.trial-lead {
+  max-width: 700px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+
+  color: #555;
+
+  font-size: 16px;
+}
+
+.trial-lead p {
+  margin: 0 0 15px;
+}
+
+
+/* =========================
+   COURSE SELECT
+========================= */
+
+.trial-course-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+
+}
+
+
+.trial-course {
+
+  padding: 50px 40px;
+
+  border: 1px solid #ddd;
+
+  text-align: center;
+
+  background: #fff;
+
+}
+
+
+.trial-course span {
+
+  font-size: 12px;
+
+  letter-spacing: 0.2em;
+
+  color: #888;
+
+}
+
+
+.trial-course h3 {
+
+  margin: 12px 0;
+
+  font-size: 28px;
+
+}
+
+
+.trial-course p {
+
+  margin: 0 0 25px;
+
+  color: #666;
+
+  font-size: 14px;
+
+}
+
+
+/* =========================
+   OUTLINE BUTTON
+========================= */
+
+.outline-button {
+
+  display: inline-block;
+
+  padding: 12px 24px;
+
+  border: 1px solid #222;
+
+  border-radius: 50px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+
+}
+
+
+.outline-button:hover {
+
+  background: #222;
+
+  color: #fff;
+
+}
+
+
+/* =========================
+   FLOW
+========================= */
+
+.trial-flow {
+
+  background: #f6f6f4;
+
+}
+
+
+.flow-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 40px;
+
+}
+
+
+.flow-item {
+
+  padding: 20px 0;
+
+}
+
+
+.flow-item span {
+
+  font-size: 13px;
+
+  color: #888;
+
+  letter-spacing: 0.15em;
+
+}
+
+
+.flow-item h3 {
+
+  margin: 15px 0 10px;
+
+  font-size: 20px;
+
+}
+
+
+.flow-item p {
+
+  margin: 0;
+
+  color: #666;
+
+  font-size: 14px;
+
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.trial-contact {
+
+  text-align: center;
+
+}
+
+
+.contact-box {
+
+  max-width: 700px;
+
+  margin: 0 auto;
+
+}
+
+
+.contact-box > p {
+
+  color: #555;
+
+}
+
+
+.contact-buttons {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin: 30px 0;
+
+}
+
+
+.contact-button {
+
+  display: inline-block;
+
+  padding: 15px 30px;
+
+  background: #222;
+
+  color: #fff;
+
+  border-radius: 50px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+
+}
+
+
+.contact-button:hover {
+
+  transform: translateY(-3px);
+
+}
+
+
+.contact-button.outline {
+
+  background: #fff;
+
+  color: #222;
+
+  border: 1px solid #222;
+
+}
+
+
+.contact-note {
+
+  font-size: 12px;
+
+  color: #999;
+
+}
+
+
+/* =========================
+   TRIAL PAGE MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .trial-course-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .trial-course {
+
+    padding: 40px 25px;
+
+  }
+
+
+  .flow-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+
+  }
+
+
+  .contact-buttons {
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+  }
+
+
+  .contact-button {
+
+    width: 100%;
+
+  }
+
+}
+
+
 
 /* =========================
    DETAIL PAGE MOBILE
