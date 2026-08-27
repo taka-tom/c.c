@@ -383,26 +383,6 @@ section {
 }
 
 
-/* スマホ */
-
-@media (max-width: 768px) {
-
-  .about-inner {
-    grid-template-columns: 1fr;
-
-    gap: 40px;
-  }
-
-  .about-image {
-    height: 350px;
-  }
-
-  .about-content {
-    max-width: none;
-  }
-
-}
-
 
 
 /* =========================
