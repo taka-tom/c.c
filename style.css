@@ -848,6 +848,207 @@ footer p {
 }
 
 /* =========================
+   DETAIL PAGE
+   書道・音楽 共通
+========================= */
+
+.page-hero {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.page-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.page-hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.page-hero-content small {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+
+.page-hero-content h1 {
+  margin: 15px 0;
+  font-size: clamp(45px, 7vw, 70px);
+  line-height: 1.2;
+}
+
+.page-hero-content p {
+  margin: 0;
+  font-size: 17px;
+}
+
+
+/* =========================
+   DETAIL INTRO
+========================= */
+
+.detail-section {
+  background: #fff;
+}
+
+.detail-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+.detail-text {
+  color: #555;
+  font-size: 16px;
+}
+
+.detail-text p {
+  margin: 0 0 20px;
+}
+
+
+/* =========================
+   DETAIL FEATURES
+========================= */
+
+.detail-features {
+  background: #f6f6f4;
+}
+
+.detail-feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 40px;
+}
+
+.detail-feature {
+  padding: 20px 0;
+}
+
+.detail-feature span {
+  font-size: 13px;
+  color: #888;
+  letter-spacing: 0.15em;
+}
+
+.detail-feature h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+}
+
+.detail-feature p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+
+/* =========================
+   TRIAL BUTTON
+========================= */
+
+.trial-content {
+  text-align: center;
+}
+
+.trial-content small {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+
+.trial-content h2 {
+  margin: 0 0 20px;
+}
+
+.trial-content p {
+  margin-bottom: 30px;
+}
+
+.trial-button {
+  display: inline-block;
+
+  padding: 14px 30px;
+
+  background: #fff;
+  color: #222;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  border-radius: 50px;
+
+  transition: 0.3s;
+}
+
+.trial-button:hover {
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   DETAIL PAGE MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .page-hero {
+    height: 400px;
+  }
+
+  .page-hero-content h1 {
+    font-size: 45px;
+  }
+
+  .page-hero-content p {
+    font-size: 15px;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .detail-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .detail-feature {
+    padding: 10px 0;
+  }
+
+}
+
+
+/* =========================
    MOBILE NAV
 ========================= */
 
@@ -1042,5 +1243,7 @@ footer p {
   min-height: 300px;
 
 }
+
+
 
 }
